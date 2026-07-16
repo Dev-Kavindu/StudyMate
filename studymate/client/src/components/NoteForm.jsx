@@ -19,7 +19,7 @@ export default function NoteForm({ onNoteAdded }) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ title, subject, content })
             });
-            
+
             if (res.ok) {
                 const newNote = await res.json();
                 onNoteAdded(newNote);
@@ -36,12 +36,12 @@ export default function NoteForm({ onNoteAdded }) {
         <form onSubmit={handleSubmit} className="form-card">
             <h3>✨ Create a New Note</h3>
             {error && <div className="error-msg">{error}</div>}
-            
+
             <input type="text" className="input-field" placeholder="Note Title..." value={title} onChange={e => setTitle(e.target.value)} />
             <input type="text" className="input-field" placeholder="Subject / Module..." value={subject} onChange={e => setSubject(e.target.value)} />
-            <textarea className="input-field" placeholder="Write your core concepts here..." value={content} onChange={e => setContent(e.target.value)}></textarea>
-            
-            <button type="submit" className="btn-submit">Save Note</button>
+            <textarea className="input-field" placeholder="Write your core concepts here..." value={content} onChange={e => setContent(e.target.value)} />
+
+            <button type="submit" className="btn-primary">Save Note</button>
         </form>
     );
 }
