@@ -36,14 +36,14 @@
 ## 📸 Screenshots
 
 ### 1. Main Workspace
-![Main Dashboard](./screenshots/ui01.png)
-![Main Dashboard](./screenshots/ui02.png)
+![Main Dashboard](.studymate/Screenshots/ui01.png)
+![Main Dashboard](.studymate/Screenshots/ui02.png)
 
 ### 2. AI Insights & Interactive Quiz
-![AI Insights and Quiz](./screenshots/ai.png)
+![AI Insights and Quiz](.studymate/Screenshots/ai.png)
 
 ### 3. Dark Mode UI
-![MCP Inspector View](./screenshots/mcp.png)
+![MCP Inspector View](.studymate/Screenshots/mcp.png)
 
 ---
 
