@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg-color: #f3f4f6;
+  --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --danger: #ef4444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.app-container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+.header { text-align: center; margin-bottom: 2.5rem; }
+.header h1 { font-size: 2.5rem; color: var(--primary); margin: 0; font-weight: 800; letter-spacing: -0.03em; }
+.header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem; }
+
+/* Search Box */
+.search-input {
+  width: 100%; padding: 1rem 1.5rem; border: 2px solid var(--border); border-radius: 999px;
+  font-size: 1rem; margin-bottom: 2rem; outline: none; transition: all 0.2s; box-sizing: border-box; background: var(--card-bg);
+}
+.search-input:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1); }
+
+/* Form Card */
+.form-card { 
+  background: var(--card-bg); padding: 2rem; border-radius: 16px; 
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); margin-bottom: 3rem; border: 1px solid var(--border); 
+}
+.form-card h3 { margin-top: 0; margin-bottom: 1.5rem; font-size: 1.25rem; }
+.input-field { 
+  width: 100%; padding: 0.875rem 1rem; border: 1px solid var(--border); border-radius: 8px; 
+  font-size: 1rem; font-family: inherit; box-sizing: border-box; outline: none; transition: all 0.2s; background: #f9fafb; margin-bottom: 1rem;
+}
+.input-field:focus { border-color: var(--primary); background: #fff; box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1); }
+textarea.input-field { min-height: 120px; resize: vertical; }
+
+/* Buttons */
+.btn-submit { 
+  background: var(--primary); color: white; border: none; padding: 0.875rem 1.5rem; 
+  border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; width: 100%; transition: background 0.2s; 
+}
+.btn-submit:hover { background: var(--primary-hover); }
+
+/* Note Cards */
+.note-card { 
+  background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; 
+  border: 1px solid var(--border); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; 
+}
+.note-card:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+.note-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+.note-title { margin: 0; font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
+.note-subject { 
+  display: inline-block; background: #e0e7ff; color: #4338ca; padding: 0.25rem 0.75rem; 
+  border-radius: 999px; font-size: 0.75rem; font-weight: 600; margin-top: 0.5rem; 
+}
+.note-content { color: var(--text-muted); line-height: 1.6; white-space: pre-wrap; margin: 0; }
+.btn-delete { 
+  background: #fee2e2; color: var(--danger); border: none; padding: 0.5rem 1rem; 
+  border-radius: 6px; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: all 0.2s; 
+}
+.btn-delete:hover { background: var(--danger); color: white; }
+
+/* States */
+.empty-state { text-align: center; padding: 3rem; background: var(--card-bg); border-radius: 12px; border: 2px dashed var(--border); color: var(--text-muted); font-weight: 500; }
+.error-msg { color: var(--danger); font-size: 0.875rem; margin-bottom: 1rem; background: #fee2e2; padding: 0.5rem; border-radius: 6px; }
