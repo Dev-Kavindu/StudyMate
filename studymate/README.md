@@ -35,9 +35,15 @@
 
 ## 📸 Screenshots
 
-> *[Screenshot of the main workspace with notes]*  
-> *[Screenshot of AI Insights with summary cards and quiz]*  
-> *[Screenshot of Dark Mode toggle]*
+### 1. Main Workspace
+![Main Dashboard](./screenshots/ui01.png)
+![Main Dashboard](./screenshots/ui02.png)
+
+### 2. AI Insights & Interactive Quiz
+![AI Insights and Quiz](./screenshots/ai.png)
+
+### 3. Dark Mode UI
+![MCP Inspector View](./screenshots/mcp.png)
 
 ---
 
